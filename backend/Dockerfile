@@ -1,4 +1,4 @@
-FROM php:8.2-apache
+FROM php:8.4-apache
 
 RUN apt-get update && apt-get install -y \
     git curl zip unzip libsqlite3-dev libzip-dev \
@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
-COPY . . 
+COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
 RUN cp .env.example .env
