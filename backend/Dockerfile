@@ -14,7 +14,7 @@ COPY . .
 
 RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 RUN cp .env.example .env
-RUN php artisan key:generate --force
+RUN php artisan migrate:fresh --force
 RUN touch database/database.sqlite
 RUN chmod -R 777 storage database
 RUN php artisan migrate --force
