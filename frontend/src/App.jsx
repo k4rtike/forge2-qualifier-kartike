@@ -4,7 +4,7 @@ function App() {
   const [boards, setBoards] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/boards')
+    fetch('https://forge2-qualifier-kartike.onrender.com/api/boards')
       .then(res => res.json())
       .then(data => setBoards(Array.isArray(data) ? data : []))
       .catch(() => setBoards([]))
