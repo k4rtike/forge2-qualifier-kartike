@@ -1,0 +1,23 @@
+{
+  "model": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "apiKey": "YOUR_GEMINI_API_KEY_HERE"
+  },
+  "slack": {
+    "enabled": true,
+    "botToken": "YOUR_SLACK_BOT_TOKEN_HERE",
+    "appToken": "YOUR_SLACK_APP_TOKEN_HERE",
+    "channels": ["#sprint-main", "#agent-coder", "#agent-log"]
+  },
+  "memory": {
+    "enabled": true,
+    "persistence": "local"
+  },
+  "skills": {
+    "directory": "./skills"
+  },
+  "cron": {
+    "enabled": true
+  }
+}
