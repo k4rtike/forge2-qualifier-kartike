@@ -7,7 +7,7 @@ Two-agent AI system (Hermes + OpenClaw) that built this Trello-style Kanban boar
 - OpenClaw (Hands): gemini-2.5-flash — handles code execution
 
 ## Live URLs
-- Frontend: YOUR_VERCEL_URL_HERE
+- Frontend: https://forge2-qualifier-kartike.vercel.app/
 - Backend API: https://forge2-qualifier-kartike.onrender.com/api/boards
 
 ## Run Locally
@@ -29,4 +29,4 @@ npm run dev
 - Cron job: posts progress every 10 minutes autonomously
 
 ## Video Walkthrough
-[Demo Video](YOUR_LOOM_LINK_HERE)
+[Demo Video](https://drive.google.com/file/d/1fpt0SnwKDBlD_Z7R0NyObYt9Bwef5RqM/view?usp=drive_link)
