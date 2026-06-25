@@ -17,7 +17,7 @@ RUN cp .env.example .env
 RUN php artisan key:generate --force
 RUN touch database/database.sqlite
 RUN chmod -R 777 storage database
-RUN php artisan migrate:fresh --force
+RUN php artisan migrate --force
 
 EXPOSE 80
 CMD ["apache2-foreground"]
