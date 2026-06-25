@@ -63,22 +63,22 @@ function App() {
   const done = boards.filter(b => b.status === 'done')
 
   const columnStyle = {
-    border: '1px solid #ccc',
+    border: '2px solid #333',
     padding: '1rem',
     width: '300px',
     borderRadius: '10px',
-    background: '#f5f5f5',
-    color: 'black',
-    minHeight: '400px'
+    background: '#e9ecef',
+    minHeight: '400px',
+    color: '#000'
   }
 
   const cardStyle = {
-    background: 'white',
-    color: 'black',
+    background: '#ffffff',
+    color: '#000000',
     padding: '10px',
     margin: '8px 0',
     borderRadius: '8px',
-    border: '1px solid #ddd',
+    border: '1px solid #333',
     cursor: 'pointer'
   }
 
@@ -104,7 +104,7 @@ function App() {
 
       <div style={{ display: 'flex', gap: '20px' }}>
         <div style={columnStyle}>
-          <h2>To Do ({todo.length})</h2>
+          <h2 style={{color:'#000'}}>To Do ({todo.length})</h2>
 
           {todo.map(board => (
             <div
@@ -118,7 +118,7 @@ function App() {
         </div>
 
         <div style={columnStyle}>
-          <h2>In Progress ({progress.length})</h2>
+          <h2 style={{color:'#000'}}>In Progress ({progress.length})</h2>
 
           {progress.map(board => (
             <div
@@ -132,7 +132,7 @@ function App() {
         </div>
 
         <div style={columnStyle}>
-          <h2>Done ({done.length})</h2>
+          <h2 style={{color:'#000'}}>Done ({done.length})</h2>
 
           {done.map(board => (
             <div
