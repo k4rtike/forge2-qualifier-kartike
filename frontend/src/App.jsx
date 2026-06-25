@@ -82,7 +82,7 @@ function App() {
 
   return (
     <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
-      <h1>Forge2 AI Kanban Board</h1>
+      <h1>Kanban Board - Forge2</h1>
 
       <button
         onClick={addBoard}
@@ -92,7 +92,7 @@ function App() {
           cursor: 'pointer'
         }}
       >
-        Add Task
+        Create Task
       </button>
 
       <p>
