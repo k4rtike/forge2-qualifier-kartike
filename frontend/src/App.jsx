@@ -68,11 +68,13 @@ function App() {
     width: '300px',
     borderRadius: '10px',
     background: '#f5f5f5',
+    color: 'black',
     minHeight: '400px'
   }
 
   const cardStyle = {
     background: 'white',
+    color: 'black',
     padding: '10px',
     margin: '8px 0',
     borderRadius: '8px',
